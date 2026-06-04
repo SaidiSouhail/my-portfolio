@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import About from "./components/About/About"
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
