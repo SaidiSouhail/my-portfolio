@@ -52,8 +52,8 @@ function Projects() {
             </div>
 
             <div className="buttons">
-              <a href="#" className="btn rgb-border">Live Demo</a>
-              <a href="#" className="btn rgb-border">Code</a>
+              <a href="https://souhail-anime-app-api.vercel.app" className="btn rgb-border">Live Demo</a>
+              <a href="https://github.com/SaidiSouhail/anime-app-api" className="btn rgb-border">Code</a>
             </div>
           </div>
         </div>

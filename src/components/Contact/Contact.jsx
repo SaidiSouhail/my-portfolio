@@ -21,7 +21,7 @@ function Contact() {
             Send Email
           </a>
 
-          <a href="https://github.com/yourname" className="btn outline">
+          <a href="https://github.com/SaidiSouhail" className="btn outline">
             GitHub
           </a>
         </div>
