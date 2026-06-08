@@ -58,6 +58,29 @@ function Projects() {
           </div>
         </div>
 
+        <div className="project-card">
+          <div className="project-info">
+            <h3> Admin Dashboard </h3>
+            <p>
+            A modern admin dashboard built with React, designed to manage and visualize key business data in a clean and responsive interface.
+             It includes interactive charts, order tracking, product and customer management, and real-time statistics. 
+             The project features a fully responsive layout, dark mode support, The goal was to create a professional, user-friendly dashboard experience
+            </p>
+
+            <div className="tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Html</span>
+              <span>Css</span>
+            </div>
+
+            <div className="buttons">
+              <a href="https://souhail-admin-dashboard.vercel.app" className="btn rgb-border">Live Demo</a>
+              <a href="https://github.com/SaidiSouhail/admin-dashboard" className="btn rgb-border">Code</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
