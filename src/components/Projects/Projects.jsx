@@ -81,6 +81,28 @@ function Projects() {
           </div>
         </div>
 
+         <div className="project-card">
+          <div className="project-info">
+            <h3> Chat-App (React + Firebase) </h3>
+            <p>
+             A Modern Chat App built with React and Firebase Authentication, Featuring Secure Login and Registration With a Clean Responsive Design
+            </p>
+
+            <div className="tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+              <span>Html</span>
+              <span>Css</span>
+            </div>
+
+            <div className="buttons">
+              <a href="https://chat-app-souhail.vercel.app" className="btn rgb-border">Live Demo</a>
+              <a href="https://github.com/SaidiSouhail/Chat-App" className="btn rgb-border">Code</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
