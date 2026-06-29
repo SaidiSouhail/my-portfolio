@@ -1,11 +1,9 @@
 .projects {
   padding: 120px 8%;
   background: #050505;
-
   max-width: 100%;
   overflow-x: hidden;
 }
-
 .projects-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -38,7 +36,6 @@
 
   position: relative;
   overflow: hidden;
-
   box-sizing: border-box;
 }
 
@@ -58,8 +55,7 @@
   color: #bdbdbd;
   line-height: 1.7;
   margin-bottom: 1rem;
-  font-size: 17px;
-
+  font-size: 20px;
   overflow-wrap: break-word;
 }
 
@@ -67,7 +63,6 @@
   display: flex;
   gap: 10px;
   margin-bottom: 1.5rem;
-
   flex-wrap: wrap;
 }
 
@@ -96,7 +91,6 @@
 
   font-weight: 600;
   position: relative;
-
   z-index: 1;
 }
 
@@ -171,9 +165,17 @@
     font-size: 2rem;
   }
 
+  .projects-header p {
+    font-size: 0.95rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
   }
 
   .project-info h3 {
@@ -181,11 +183,16 @@
   }
 
   .project-info p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .buttons {
     justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -195,10 +202,94 @@
   }
 
   .project-card {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .project-info p {
     font-size: 14px;
+  }
+
+  .tech span {
+    font-size: 0.75rem;
+  }
+}
+
+.project-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  appearance: none;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 32px;
+  font-size: 16px;
+
+  border-radius: 30px;
+
+  color: white;
+  font-weight: 600;
+
+  background: #0a0a0a;
+
+  overflow: hidden;
+
+  transform: translateZ(0);
+}
+
+.tab-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+
+  background: linear-gradient(
+    90deg,
+    #ff004c,
+    #7c3aed,
+    #00e5ff,
+    #ff3cac,
+    #ff004c
+  );
+
+  background-size: 300% 300%;
+  animation: rgbMove 4s linear infinite;
+
+  border-radius: 30px;
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0a0a0a;
+  border-radius: 28px;
+  z-index: -1;
+}
+
+.tab-btn:hover {
+  transform: scale(1.06);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .tab-btn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 15px;
+    padding: 14px 20px;
+    text-align: center;
   }
 }
